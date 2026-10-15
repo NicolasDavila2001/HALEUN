@@ -8,12 +8,12 @@ Bienvenido a la documentación visual de la interfaz del proyecto. En este espac
 
 Este conjunto de maquetas visuales (mockups) muestra la estructura y estética general de la aplicación en sus diferentes pantallas y secciones clave:
 
-1. **Pantalla Principal / Dashboard**
-2. **Registro e Inicio de Sesión**
-3. **Perfil de Usuario**
-4. **Vista de Detalles / Producto**
-5. **Configuración y Ajustes**
-6. **Vista Móvil / Responsive**
+1. **Registro e Inicio de Sesión**
+2. **Menu Principal HALEUN**
+3. **Pasarela de modelos disponibles**
+4. **Practica Libre**
+5. **Lecciones de practica**
+6. **Examenes**
 
 ---
 
@@ -35,27 +35,5 @@ A continuación se presentan las capturas organizadas en una cuadrícula para fa
 
 ---
 
-## 📂 Organización de Archivos
 
-Las imágenes correspondientes se encuentran alojadas en la carpeta de recursos de este repositorio:
 
-```text
-/
-├── assets/
-│   ├── mockup-1.png
-│   ├── mockup-2.png
-│   ├── mockup-3.png
-│   ├── mockup-4.png
-│   ├── mockup-5.png
-│   └── mockup-6.png
-└── README.md
-```
-
-> **Nota:** Para reemplazar los marcadores de posición (`via.placeholder.com`) con tus imágenes reales, actualiza las rutas en la tabla anterior apuntando a `./assets/mockup-X.png`.
-
----
-
-## 🛠️ Herramientas Utilizadas
-
-* **Diseño UI/UX:** Figma / Adobe XD / Sketch
-* **Exportación:** PNG / WebP @2x
