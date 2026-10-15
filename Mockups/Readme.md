@@ -21,17 +21,17 @@ Este conjunto de maquetas visuales (mockups) muestra la estructura y estética g
 
 A continuación se presentan las capturas organizadas en una cuadrícula para facilitar su revisión:
 
-| 1. Dashboard / Vista Principal | 2. Inicio de Sesión / Registro |
+| 1. Registro e Inicio de Sesión | 2. Menu Principal HALEUN |
 | :---: | :---: |
 | ![Mockup 1 - Dashboard](https://via.placeholder.com/600x400?text=Mockup+1+-+Dashboard) | ![Mockup 2 - Login](https://via.placeholder.com/600x400?text=Mockup+2+-+Login) |
 
-| 3. Perfil de Usuario | 4. Vista de Detalles |
+| 3. Examenes | 4. Pasarela de modelos disponibles|
 | :---: | :---: |
 | ![Mockup 3 - Perfil](https://via.placeholder.com/600x400?text=Mockup+3+-+Perfil) | ![Mockup 4 - Detalles](https://via.placeholder.com/600x400?text=Mockup+4+-+Detalles) |
 
-| 5. Configuración | 6. Vista Móvil (Responsive) |
+| 5. Practica Libre | 6. Lecciones de practica |
 | :---: | :---: |
-| ![Mockup 5 - Configuración](https://via.placeholder.com/600x400?text=Mockup+5+-+Configuracion) | ![Mockup 6 - Responsive](https://via.placeholder.com/600x400?text=Mockup+6+-+Mobile) |
+| ![Mockup 5 - Configuración](charla/screen.png) | ![Mockup 6 - Responsive](https://via.placeholder.com/600x400?text=Mockup+6+-+Mobile) |
 
 ---
 
