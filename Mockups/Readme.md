@@ -23,15 +23,15 @@ A continuación se presentan las capturas organizadas en una cuadrícula para fa
 
 | 1. Registro e Inicio de Sesión | 2. Menu Principal HALEUN |
 | :---: | :---: |
-| ![Mockup 1 - Dashboard](https://via.placeholder.com/600x400?text=Mockup+1+-+Dashboard) | ![Mockup 2 - Login](https://via.placeholder.com/600x400?text=Mockup+2+-+Login) |
+| ![Mockup 1 - Dashboard](Login/screen.png) | ![Mockup 2 - Login](Menu/screen.png) |
 
 | 3. Examenes | 4. Pasarela de modelos disponibles|
 | :---: | :---: |
-| ![Mockup 3 - Perfil](https://via.placeholder.com/600x400?text=Mockup+3+-+Perfil) | ![Mockup 4 - Detalles](https://via.placeholder.com/600x400?text=Mockup+4+-+Detalles) |
+| ![Mockup 3 - Perfil](Examen/screen.png) | ![Mockup 4 - Detalles](Modelos/screen.png) |
 
 | 5. Practica Libre | 6. Lecciones de practica |
 | :---: | :---: |
-| ![Mockup 5 - Configuración](charla/screen.png) | ![Mockup 6 - Responsive](https://via.placeholder.com/600x400?text=Mockup+6+-+Mobile) |
+| ![Mockup 5 - Configuración](Charla/screen.png) | ![Mockup 6 - Responsive](Lecciones/screen.png) |
 
 ---
 
