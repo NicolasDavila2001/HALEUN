@@ -19,7 +19,7 @@ Este conjunto de maquetas visuales (mockups) muestra la estructura y estética g
 
 ## 🖼️ Visualización de Mockups
 
-A continuación se presentan las capturas organizadas en una cuadrícula para facilitar su revisión:
+A continuación se presentan las capturas de las 6 pantallas principales donde se realizaron con frames de dispositivos diferentes ya que es una app web 
 
 | 1. Registro e Inicio de Sesión | 2. Menu Principal HALEUN |
 | :---: | :---: |
