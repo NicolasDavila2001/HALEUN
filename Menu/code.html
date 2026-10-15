@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>HALEUN - Universidad Nacional de Colombia</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            unal: {
+              green: '#94b43b',       // Pantone 376 C
+              'green-dark': '#7b982d',
+              'green-light': '#f0f7ea',
+              navy: '#0d3b66',
+              'navy-dark': '#08213b',
+              maroon: '#73182C',
+              'maroon-dark': '#551020',
+              gray: '#f8fafc',
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background: radial-gradient(circle at 50% 20%, #e2e8f0 0%, #cbd5e1 50%, #94a3b8 100%);
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center p-3 sm:p-6 md:p-8 font-sans antialiased select-none">
+<!-- Desktop PC Rig Wrapper -->
+<div class="w-full max-w-[1240px] flex flex-col items-center">
+<!-- Monitor Chassis (Screen + Bezels) -->
+<div class="w-full bg-[#16181d] rounded-2xl p-[14px] sm:p-[18px] md:p-[20px] shadow-[0_25px_60px_-15px_rgba(15,23,42,0.6),0_0_0_1px_rgba(255,255,255,0.08)] flex flex-col relative border border-[#2b2f38]">
+<!-- Top Bezel Center Webcam & Mic Sensors -->
+<div class="absolute top-[7px] sm:top-[9px] left-1/2 -translate-x-1/2 flex items-center gap-2 z-30 pointer-events-none">
+<span class="w-1 h-1 rounded-full bg-[#1e293b]"></span>
+<div class="w-2.5 h-2.5 rounded-full bg-[#0a0e14] border border-[#2d3748] flex items-center justify-center">
+<span class="w-1 h-1 rounded-full bg-[#1e40af]/70 shadow-[0_0_2px_#3b82f6]"></span>
+</div>
+<span class="w-1 h-1 rounded-full bg-[#1e293b]"></span>
+</div>
+<!-- Realistic Monitor Display Area (16:9 Aspect Ratio Container) -->
+<div class="w-full bg-[#f8fafc] rounded-lg overflow-hidden flex flex-col shadow-inner border border-slate-200/50 min-h-[580px] md:min-h-[640px]">
+<!-- ================= HALEUN UI HEADER ================= -->
+<header class="w-full bg-white border-b border-slate-200/80 px-4 sm:px-6 py-2.5 flex items-center justify-between shadow-sm z-20">
+<!-- Left: Official Logos (UNAL + HALEUN) -->
+<div class="flex items-center gap-3">
+<!-- UNAL Shield Logo -->
+<div class="h-11 w-11 flex-shrink-0 flex items-center justify-center p-0.5 rounded-lg bg-slate-50 border border-slate-200/70 hover:scale-105 transition-transform">
+<img alt="Escudo Universidad Nacional de Colombia" class="h-full w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoOtDMlWpTpgGFOEAH6_g7EsiymDrKlsnwpukBI429tWoPMWG0EsfVqs4nBi1Lng5md8kKdKiNmHIeUQ-trmYqYSl-LW7deNAiBJaJBOnZ4V4iyAwW5Dg8jThWhYXHtRbMSA43qIL9k3ixhe9yL_07ytjyGTdcy72y_Mw0alheGXuC_L3MaR6p1LSloD4fz-V1UEBn8iSryC0GV421nd_9ffeJ9jwY_fwobi0OzjQcuy6xPv4d9vcesXJ2Dw2YRsoFDQ">
+</div>
+<div class="h-7 w-[1px] bg-slate-200"></div>
+<!-- HALEUN Official Logo Badge -->
+<div class="flex items-center gap-2">
+<img alt="HALEUN Logo" class="h-10 w-10 object-contain drop-shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVQZJbsrXrOENKM5MQOp-07wTYe-_vtgTLLE_Xrvrenw8nx_YB8O4hCRPCsNMSc4Pht3fx6GxBqW5pxc9-aRokxaNgAbpDMVt029lUZmrOrcwF6MT34TGTmO31QuLO51o1lrJE9xd3yuMsnuS_hj_dgpNRAxOI8aM8KImLKIj5vzAZtI3O7E_Q_XJrsj8x9-r4FnjkPUQpr-kNjyHu6172z1B1dCqpAqrA72Wa6EvjUugTHuAszArqT2hgmH553iKTMQ">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-display font-bold text-lg text-unal-navy tracking-tight leading-none">HALEUN</span>
+<span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-unal-green text-white tracking-wider uppercase leading-none">UNAL</span>
+</div>
+<span class="text-[11px] font-medium text-slate-500 leading-tight">Aprendizaje de Lenguas Extranjeras</span>
+</div>
+</div>
+</div>
+<!-- Center: User Level Indicator Badge (Institutional Green #94b43b) -->
+<div class="hidden sm:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-unal-green-light border border-unal-green/30 shadow-xs">
+<span class="material-symbols-outlined text-unal-green text-[18px]">verified</span>
+<div class="flex items-center gap-1.5 text-xs text-slate-700">
+<span class="font-semibold text-slate-600">Nivel Actual:</span>
+<span class="font-bold text-unal-navy bg-white px-2 py-0.5 rounded-full shadow-2xs border border-unal-green/20">B1 Intermedio</span>
+</div>
+</div>
+<!-- Right: User Information & Logout -->
+<div class="flex items-center gap-3">
+<div class="flex flex-col items-end text-right">
+<span class="font-bold text-xs md:text-sm text-unal-navy leading-tight">Camilo Torres</span>
+<span class="text-[11px] text-slate-500 leading-tight">Facultad de Ciencias Humanas</span>
+<button class="mt-0.5 inline-flex items-center gap-1 text-[11px] font-semibold text-unal-maroon hover:text-unal-maroon-dark hover:underline transition-colors cursor-pointer group" type="button">
+<span class="material-symbols-outlined text-[13px] group-hover:-translate-x-0.5 transition-transform">logout</span>
+<span>Cerrar sesión</span>
+</button>
+</div>
+<div class="w-9 h-9 rounded-full bg-unal-navy text-white flex items-center justify-center font-bold text-xs ring-2 ring-unal-green/40 shadow-xs">
+              CT
+            </div>
+</div>
+</header>
+<!-- ================= MAIN CONTENT BODY ================= -->
+<main class="flex-1 bg-gradient-to-b from-[#f8fafc] via-[#f0f7ea]/35 to-[#f8fafc] px-4 sm:px-8 py-4 sm:py-5 flex flex-col items-center justify-between relative overflow-hidden">
+<!-- Background Decorative Elements -->
+<div class="absolute -top-16 -left-16 w-64 h-64 rounded-full bg-unal-green/5 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/3 -right-20 w-80 h-80 rounded-full bg-unal-navy/5 blur-3xl pointer-events-none"></div>
+<!-- Headline Greeting -->
+<div class="text-center max-w-xl mx-auto z-10 pt-1">
+<h1 class="font-display font-bold text-2xl sm:text-3xl md:text-[32px] text-unal-navy tracking-tight leading-tight">
+              ¡Bienvenido a <span class="text-unal-green inline-block">HALEUN</span>!
+            </h1>
+<p class="font-sans text-xs sm:text-sm md:text-base text-slate-600 font-medium mt-0.5">
+              ¿Qué deseas hacer hoy?
+            </p>
+</div>
+<!-- 3 Compact Interactive Option Cards -->
+<div class="w-full max-w-[820px] grid grid-cols-1 sm:grid-cols-3 gap-3.5 sm:gap-4 md:gap-5 my-3 z-10">
+<!-- Option 1: Lecciones (Institutional Green & UNAL Navy Accents) -->
+<button class="group relative bg-white hover:bg-slate-50/80 rounded-xl p-3.5 sm:p-4 border-2 border-transparent hover:border-unal-green/50 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col items-center justify-center text-center cursor-pointer" type="button">
+<!-- Top color bar indicator -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-unal-green to-emerald-500 rounded-t-xl"></div>
+<!-- Icon Container -->
+<div class="w-13 h-13 rounded-xl bg-unal-green/15 text-unal-green flex items-center justify-center mb-2 group-hover:scale-105 group-hover:bg-unal-green group-hover:text-white transition-all shadow-inner">
+<span class="material-symbols-outlined text-[28px]">menu_book</span>
+</div>
+<h2 class="font-display font-bold text-base sm:text-lg text-unal-navy group-hover:text-unal-green-dark transition-colors">
+                Lecciones
+              </h2>
+</button>
+<!-- Option 2: Conversación (Mic/Audio with Blue/Navy theme) -->
+<button class="group relative bg-white hover:bg-slate-50/80 rounded-xl p-3.5 sm:p-4 border-2 border-transparent hover:border-unal-navy/40 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col items-center justify-center text-center cursor-pointer" type="button">
+<!-- Top color bar indicator -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-unal-navy to-sky-500 rounded-t-xl"></div>
+<!-- Icon Container -->
+<div class="w-13 h-13 rounded-xl bg-unal-navy/10 text-unal-navy flex items-center justify-center mb-2 group-hover:scale-105 group-hover:bg-unal-navy group-hover:text-white transition-all shadow-inner">
+<span class="material-symbols-outlined text-[28px]">mic</span>
+</div>
+<h2 class="font-display font-bold text-base sm:text-lg text-unal-navy group-hover:text-blue-700 transition-colors">
+                Conversación
+              </h2>
+</button>
+<!-- Option 3: Examen (Trophy / Assessment with Maroon/Gold Accents) -->
+<button class="group relative bg-white hover:bg-slate-50/80 rounded-xl p-3.5 sm:p-4 border-2 border-transparent hover:border-unal-maroon/40 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col items-center justify-center text-center cursor-pointer" type="button">
+<!-- Top color bar indicator -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-unal-maroon to-amber-500 rounded-t-xl"></div>
+<!-- Icon Container -->
+<div class="w-13 h-13 rounded-xl bg-unal-maroon/10 text-unal-maroon flex items-center justify-center mb-2 group-hover:scale-105 group-hover:bg-unal-maroon group-hover:text-white transition-all shadow-inner">
+<span class="material-symbols-outlined text-[28px]">emoji_events</span>
+</div>
+<h2 class="font-display font-bold text-base sm:text-lg text-unal-navy group-hover:text-unal-maroon transition-colors">
+                Examen
+              </h2>
+</button>
+</div>
+<!-- Mascot Section: Búho UNAL pointing enthusiastically at the 3 options -->
+<div class="w-full flex flex-col items-center justify-center relative mt-0 sm:mt-1">
+<!-- Ambient Glow -->
+<div class="absolute w-44 h-44 rounded-full bg-unal-green/20 blur-2xl -z-10"></div>
+<!-- Owl mascot seamlessly integrated -->
+<div class="h-44 sm:h-52 md:h-56 select-none flex items-center justify-center">
+<img alt="Búho Mascota Universidad Nacional con alas levantadas señalando las opciones" class="h-full w-auto object-contain [mix-blend-mode:multiply] drop-shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer" src="https://lh3.googleusercontent.com/aida/AEtjO1V0ll6F64RGIcb2yM73NeiozunFDbKhf8m4PG6XPsZi7lq10-S9qNGF1zRBhvCAiuK8_T0iuicpFbD89wZZjKSVVm0-vDiaFeG5sjC2MxJwqjnbi04dQ6SNU2dZfNJX3R6_K3SxTpp8H99_espIojbZb4ZO-SspzdX1g6R93fm-wik1btylAEQQxzy3cbSdRyatfcxD5stbMiFJkUeXkfkV-QbqMkR5SRQN3wajizKl">
+</div>
+</div>
+</main>
+<!-- ================= INSTITUTIONAL FOOTER ================= -->
+<footer class="w-full bg-white border-t border-slate-200/90 px-4 sm:px-6 py-2.5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500 z-20">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-unal-green"></span>
+<span class="font-medium text-slate-700">
+              Universidad Nacional de Colombia
+            </span>
+<span class="hidden md:inline text-slate-300">·</span>
+<span class="hidden md:inline text-slate-500">
+              Guía Estudiante / Portal de Aprendizaje de Lenguas Extranjeras (HALEUN)
+            </span>
+</div>
+<div class="flex items-center gap-4 text-[11px] font-semibold text-slate-600">
+<a class="hover:text-unal-green transition-colors" href="#">Guía del Estudiante</a>
+<span class="text-slate-300">|</span>
+<a class="hover:text-unal-green transition-colors" href="#">Mesa de Ayuda</a>
+<span class="text-slate-300">|</span>
+<a class="hover:text-unal-green transition-colors" href="#">Términos y Privacidad</a>
+</div>
+</footer>
+</div>
+<!-- Bottom Bezel Details (Brand / LED Indicators matching Image 2) -->
+<div class="pt-2 px-3 flex items-center justify-between text-[#475569]">
+<div class="w-12"></div>
+<!-- Centered subtle display mark -->
+<div class="text-[10px] tracking-widest uppercase font-semibold text-[#64748b]/60">HALEUN MONITOR</div>
+<!-- Power & status LEDs in bottom right (like Image 2: red/orange and green dots) -->
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500/90 shadow-[0_0_4px_#f59e0b]"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500/90 shadow-[0_0_4px_#10b981]"></span>
+</div>
+</div>
+</div>
+<!-- Monitor Realistic Neck / Pillar (Exact shape & perspective from Image 2) -->
+<div class="w-24 sm:w-28 h-12 sm:h-14 bg-gradient-to-b from-[#1b1e24] via-[#121418] to-[#0c0e12] border-x border-[#2b2f38] shadow-[inset_0_2px_4px_rgba(0,0,0,0.6)] flex items-center justify-center">
+<!-- Subtle cable passage canal indentation -->
+<div class="w-6 h-8 rounded bg-[#090b0e] border border-[#222731]/80"></div>
+</div>
+<!-- Monitor Realistic Heavy Base Stand (Plataforma peana biselada from Image 2) -->
+<div class="w-64 sm:w-80 md:w-96 h-5 sm:h-6 bg-gradient-to-b from-[#222630] via-[#171920] to-[#0d0f14] rounded-t-xl rounded-b-sm border-t border-x border-[#374151] shadow-[0_15px_30px_rgba(0,0,0,0.6),0_2px_4px_rgba(0,0,0,0.8)] relative flex items-center justify-center">
+<!-- Top bevel reflection line -->
+<div class="absolute top-[2px] left-4 right-4 h-[1px] bg-white/10 rounded-full"></div>
+</div>
+<!-- Realistic Soft Shadow Beneath the Monitor Stand Base -->
+<div class="w-72 sm:w-96 md:w-[420px] h-3 bg-black/40 blur-md rounded-full mt-[-2px]"></div>
+</div>
+</body></html>

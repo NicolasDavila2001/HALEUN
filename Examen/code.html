@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>HALEUN - Resultados de Evaluación UNAL</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            unal: {
+              green: '#2e7d32',
+              'green-dark': '#1e5221',
+              'green-light': '#e8f5e9',
+              blue: '#0d3b66',
+              'blue-light': '#1976d2',
+              accent: '#3b82f6',
+              neutral: '#f8fafc',
+            }
+          },
+          boxShadow: {
+            'phone-frame': '0 25px 60px -15px rgba(13, 59, 102, 0.3), 0 0 0 12px #1f2937, 0 0 0 14px #374151, 0 0 0 17px #111827',
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Phone & Scrollbar Styling -->
+<style data-purpose="phone-mockup">
+    /* Hide scrollbar for a native app feel */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    /* Subtle background grid pattern for showcase presentation */
+    .bg-grid-pattern {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(13, 59, 102, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(13, 59, 102, 0.04) 1px, transparent 1px);
+    }
+  </style>
+<!-- END: Custom Phone & Scrollbar Styling -->
+</head>
+<body class="bg-slate-100 bg-grid-pattern min-h-screen flex items-center justify-center p-4 sm:p-8 font-sans antialiased text-slate-800 selection:bg-blue-600 selection:text-white">
+<!-- BEGIN: MainContainer -->
+<main class="w-full max-w-5xl flex flex-col lg:flex-row items-center justify-center gap-10 py-6" data-purpose="presentation-wrapper">
+<!-- BEGIN: Desktop Context / Info Sidebar (Enhances Web Showcase) -->
+<!-- END: Desktop Context / Info Sidebar -->
+<!-- BEGIN: Smartphone Frame Wrapper -->
+<div class="relative w-[380px] h-[780px] bg-gray-900 rounded-[52px] shadow-phone-frame border-[3px] border-gray-700/60 p-3 select-none flex-shrink-0" data-purpose="smartphone-chassis">
+<!-- Phone Hardware Buttons Simulation -->
+<!-- Volume Up -->
+<div aria-hidden="true" class="absolute -left-[16px] top-28 w-[4px] h-10 bg-gray-700 rounded-l-md"></div>
+<!-- Volume Down -->
+<div aria-hidden="true" class="absolute -left-[16px] top-42 w-[4px] h-10 bg-gray-700 rounded-l-md"></div>
+<!-- Power Button -->
+<div aria-hidden="true" class="absolute -right-[16px] top-32 w-[4px] h-14 bg-gray-700 rounded-r-md"></div>
+<!-- Smartphone Screen Glass -->
+<div class="w-full h-full bg-white rounded-[44px] overflow-hidden flex flex-col relative border border-slate-100 shadow-inner" data-purpose="smartphone-screen">
+<!-- BEGIN: Mobile Notch / Island -->
+<div class="absolute top-2 left-1/2 -translate-x-1/2 w-28 h-6 bg-black rounded-full z-40 flex items-center justify-between px-3.5" data-purpose="dynamic-island">
+<div class="w-2.5 h-2.5 rounded-full bg-[#111827] border border-gray-800"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-500/80 animate-ping"></div>
+</div>
+<!-- END: Mobile Notch / Island -->
+<!-- BEGIN: Mobile Status Bar -->
+<div class="pt-3 pb-1 px-7 flex justify-between items-center text-xs font-semibold text-gray-800 z-30 shrink-0 select-none">
+<span class="">9:41</span>
+<div class="flex items-center space-x-1.5 text-gray-700">
+<!-- Cellular signal icon -->
+<svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L12 22l7.03-4.39C20.26 16.07 21 14.12 21 12c0-4.97-4.03-9-9-9zm0 2c3.87 0 7 3.13 7 7 0 1.57-.52 3.01-1.39 4.19L12 19.64l-5.61-3.45C5.52 15.01 5 13.57 5 12c0-3.87 3.13-7 7-7z"></path>
+</svg>
+<!-- Wifi icon -->
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+<path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<!-- Battery icon -->
+<div class="w-5 h-2.5 border border-gray-800 rounded-sm p-0.5 flex items-center">
+<div class="h-full bg-gray-900 rounded-2xs w-4"></div>
+</div>
+</div>
+</div>
+<!-- END: Mobile Status Bar -->
+<!-- BEGIN: App Scrollable Main Content -->
+<div class="flex-1 overflow-y-auto no-scrollbar px-4 pt-1 pb-4 flex flex-col" data-purpose="app-body-content">
+<!-- BEGIN: Header App Bar -->
+<div class="flex items-center gap-2 py-2 px-1 border-b border-slate-200/80 mb-2" data-purpose="mobile-browser-bar"><button class="p-1.5 rounded-lg text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition-colors flex items-center justify-center" type="button"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"></path></svg></button><div class="flex-1 flex items-center justify-center gap-1.5 py-1 px-3 bg-slate-100 rounded-full text-slate-600 text-xs font-medium"><svg class="w-3 h-3 text-slate-400" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" fill-rule="evenodd"></path></svg><span class="tracking-tight font-medium text-slate-700">haleun.unal.edu.co</span></div><button class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 transition-colors" type="button"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+<!-- END: Header App Bar -->
+<!-- Page Title -->
+<div class="text-center mt-3">
+<h2 class="text-xl font-black text-slate-900 tracking-tight">EXAM RESULTS</h2>
+<p class="text-[11px] text-slate-500 font-medium">Prueba de Clasificación de Idiomas</p>
+</div>
+<!-- BEGIN: Avatar Mascot Section -->
+<section class="mt-2 text-center relative flex justify-center items-center" data-purpose="mascot-display"><div class="relative group cursor-pointer"><div class="absolute -inset-2 bg-gradient-to-t from-blue-100/40 to-transparent rounded-full blur-md"></div><img alt="Mascota Búho UNAL con hoodie vino tinto" class="w-44 h-52 object-contain mx-auto drop-shadow-lg relative transition-transform duration-300 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_1w7AzkXugZ3LrRiQ4LbZuzKcBIXXuUqjvuEM4hLLapSRGYt1oNErgpmNxqIN_s8Ravsi2RYdqilRCCb3Tat2R432L3uu5F3xX-DoBRIO9IiaxCQDAT_JImlTELZH-V9RP3G7TSKeTHWCdhIZa8gYmQD4_HT__pfflwxNUC2r4_qMbRaU4lx33Zrjwi3eMduqJOxKYbsUMK_gT51bo9UfIflOeawZinKiGlcbftmtX4hdYb6a5GI1"></div></section>
+<!-- END: Avatar Mascot Section -->
+<!-- BEGIN: CEFR Level Badge & Title -->
+<section class="text-center -mt-1" data-purpose="competency-level">
+<div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-blue-50 text-blue-800 text-[11px] font-bold tracking-wide uppercase mb-0.5">
+<svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+<path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path>
+</svg>
+<span class="">Nivel Alcanzado</span>
+</div>
+<h3 class="text-3xl font-black text-unal-blue tracking-tight leading-none mt-1">
+              LEVEL B1
+            </h3>
+<span class="text-[11px] font-extrabold text-slate-500 tracking-widest uppercase mt-1 block">
+              ACHIEVED
+            </span>
+</section>
+<!-- END: CEFR Level Badge & Title -->
+<!-- BEGIN: Overall Progress Bar -->
+<div class="mt-3 bg-slate-50 p-2.5 rounded-xl border border-slate-100" data-purpose="overall-progress-bar">
+<div class="flex justify-between items-center mb-1 text-[11px] font-bold text-slate-700">
+<span class="text-slate-500 uppercase tracking-wide">PROGRESO HACIA B2</span>
+<span class="text-unal-blue font-extrabold">85% Global</span>
+</div>
+<div class="w-full bg-slate-200 rounded-full h-2 overflow-hidden">
+<div class="bg-gradient-to-r from-unal-blue to-blue-500 h-2 rounded-full w-[85%] transition-all duration-500"></div>
+</div>
+</div>
+<!-- END: Overall Progress Bar -->
+<!-- BEGIN: 5 Disciplines Breakdown -->
+<section class="mt-3 bg-white p-3 rounded-2xl border border-slate-100 shadow-sm" data-purpose="skills-breakdown"><div class="flex justify-between items-center mb-2 px-1"><h4 class="text-[11px] font-bold text-slate-800 uppercase tracking-wider">Desglose de Competencias</h4><span class="text-[10px] font-semibold text-unal-blue bg-blue-50 px-2 py-0.5 rounded-full">5 Áreas</span></div><div class="grid grid-cols-5 gap-1.5 text-center"><div class="bg-slate-50 p-1.5 rounded-xl border border-slate-100 flex flex-col justify-between items-center"><span class="text-[9px] font-medium text-slate-500 block truncate w-full">Grammar</span><span class="text-xs font-black text-slate-800 my-1">82%</span><div class="w-full bg-slate-200 rounded-full h-1"><div class="bg-unal-blue h-1 rounded-full w-[82%]"></div></div></div><div class="bg-slate-50 p-1.5 rounded-xl border border-slate-100 flex flex-col justify-between items-center"><span class="text-[9px] font-medium text-slate-500 block truncate w-full">Reading</span><span class="text-xs font-black text-slate-800 my-1">90%</span><div class="w-full bg-slate-200 rounded-full h-1"><div class="bg-emerald-600 h-1 rounded-full w-[90%]"></div></div></div><div class="bg-slate-50 p-1.5 rounded-xl border border-slate-100 flex flex-col justify-between items-center"><span class="text-[9px] font-medium text-slate-500 block truncate w-full">Vocab</span><span class="text-xs font-black text-slate-800 my-1">88%</span><div class="w-full bg-slate-200 rounded-full h-1"><div class="bg-unal-blue h-1 rounded-full w-[88%]"></div></div></div><div class="bg-slate-50 p-1.5 rounded-xl border border-slate-100 flex flex-col justify-between items-center"><span class="text-[9px] font-medium text-slate-500 block truncate w-full">Speaking</span><span class="text-xs font-black text-slate-800 my-1">85%</span><div class="w-full bg-slate-200 rounded-full h-1"><div class="bg-blue-600 h-1 rounded-full w-[85%]"></div></div></div><div class="bg-slate-50 p-1.5 rounded-xl border border-slate-100 flex flex-col justify-between items-center"><span class="text-[9px] font-medium text-slate-500 block truncate w-full">Listening</span><span class="text-xs font-black text-slate-800 my-1">80%</span><div class="w-full bg-slate-200 rounded-full h-1"><div class="bg-unal-blue h-1 rounded-full w-[80%]"></div></div></div></div></section>
+<!-- END: 5 Disciplines Breakdown -->
+<!-- BEGIN: Primary Action Button -->
+<div class="mt-4 pt-1" data-purpose="primary-action-container"><button class="w-full py-3 px-4 bg-gradient-to-r from-unal-blue via-[#12497d] to-unal-blue hover:from-blue-900 hover:to-blue-800 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md hover:shadow-lg active:scale-[0.98] transition-all flex items-center justify-center gap-2" type="button"><svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="">Realizar examen</span></button></div>
+<!-- END: Primary Action Button -->
+</div>
+<!-- END: App Scrollable Main Content -->
+<!-- BEGIN: Mobile Bottom Navigation Bar -->
+<!-- END: Mobile Bottom Navigation Bar -->
+<!-- Home Indicator Bar -->
+<div class="w-32 h-1 bg-slate-300 rounded-full mx-auto mb-1 shrink-0"></div>
+</div>
+<!-- END: Smartphone Screen Glass -->
+</div>
+<!-- END: Smartphone Frame Wrapper -->
+</main>
+<!-- END: MainContainer -->
+</body></html>

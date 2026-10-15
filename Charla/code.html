@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>UNAL Speech Practice App Mockup</title>
+<!-- Tailwind CSS CDN with forms and container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- BEGIN: Custom Phone & Animation Styles -->
+<style data-purpose="custom-styling">
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Subtle pulsing effect for mic button */
+    @keyframes pulse-ring {
+      0% {
+        box-shadow: 0 0 0 0 rgba(148, 180, 59, 0.45);
+      }
+      70% {
+        box-shadow: 0 0 0 14px rgba(148, 180, 59, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(148, 180, 59, 0);
+      }
+    }
+    .mic-pulse {
+      animation: pulse-ring 2.2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+    }
+  </style>
+<!-- END: Custom Phone & Animation Styles -->
+</head>
+<body class="bg-neutral-100 min-h-screen flex items-center justify-center p-4 antialiased text-neutral-800 selection:bg-lime-200">
+<!-- BEGIN: DesktopCanvas -->
+<main class="w-full flex flex-col items-center justify-center py-6">
+<!-- BEGIN: SmartphoneFrame -->
+<!-- Proportional modern mobile device frame: ~390px x 800px, dark titanium edge with bezel -->
+<div class="relative w-[390px] h-[800px] bg-neutral-900 rounded-[52px] p-[10px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.08)] border-4 border-neutral-700/60 transition-all flex flex-col justify-between">
+<!-- Inner Screen Container with Bezel -->
+<div class="relative w-full h-full bg-slate-50 rounded-[42px] overflow-hidden flex flex-col justify-between shadow-inner select-none">
+<!-- BEGIN: ScreenTopArea -->
+<header class="w-full pt-3 px-6 relative z-20 flex flex-col items-center">
+<!-- Dynamic Island / Punch Hole Notch -->
+<div class="w-28 h-6 bg-black rounded-full mb-1 flex items-center justify-end pr-2.5 space-x-1 shadow-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-neutral-900 border border-neutral-800"></div>
+<div class="w-2 h-2 rounded-full bg-neutral-950"></div>
+</div>
+<!-- Status Bar Content -->
+<div class="w-full flex justify-between items-center text-xs font-semibold text-neutral-800 tracking-tight px-1">
+<span class="">9:41</span>
+<div class="flex items-center space-x-1.5 text-neutral-800">
+<!-- Cellular Signal Icon -->
+<svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+<path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 18.23c-.22.28-.18.69.1.91.28.22.69.18.91-.1l1.05-.83C8.03 19.34 9.93 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15.5c-3.58 0-6.5-2.92-6.5-6.5S8.42 5.5 12 5.5s6.5 2.92 6.5 6.5-2.92 6.5-6.5 6.5z"></path>
+<circle cx="12" cy="12" r="3.2"></circle>
+</svg>
+<!-- WiFi Icon -->
+<svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+<path d="M12 4C7.31 4 3.07 5.9 0 8.98L12 21 24 8.98A17.91 17.91 0 0012 4zm0 3.25c3.78 0 7.22 1.48 9.77 3.91L12 19.1 2.23 11.16C4.78 8.73 8.22 7.25 12 7.25z"></path>
+</svg>
+<!-- Battery Icon -->
+<div class="flex items-center space-x-0.5">
+<div class="w-5 h-2.5 border border-neutral-700 rounded-sm p-0.5 flex items-center">
+<div class="w-full h-full bg-neutral-800 rounded-xs"></div>
+</div>
+<div class="w-0.5 h-1 bg-neutral-600 rounded-r-xs"></div>
+</div>
+</div>
+</div>
+</header>
+<!-- END: ScreenTopArea -->
+<!-- BEGIN: MascotSection -->
+<!-- Prominent Mascot Image in the Center -->
+<div class="flex-1 flex items-center justify-center px-2 py-0 relative overflow-visible z-10" data-purpose="mascot-display">
+<img alt="Mascota Búho UNAL" class="w-full object-contain mx-auto block mix-blend-multiply drop-shadow-sm select-none pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvZioJ-AuK76aq7uVm3pszWeRIrUlZLNlrVt3bjQj1iPgceCJ3yo0JQwmRIPZtLHPH-AXJQcpkGH2uQ_U-I_1h7XvSs9EHv7c63yLZ-lJGi1d4IMiem6jhpwAQ0btmI6Y8CO0GirOja3uiJTvpP3QcMxmoo7xAKWccHPEbfvImIQ6vm4fZXUdv0PhmRT5U8I3FXBVuNpIM807biNfBOCoIl-ZbFUN2x4VGYFk0KRrSAoKOi0ySZbUOm890LnnRE8EmwQ" style="width: 100%; max-width: 380px; height: 440px; max-height: 480px; object-fit: contain; margin: -20px auto -30px; display: block; mix-blend-mode: multiply; transform: scale(1.15);">
+</div>
+<!-- END: MascotSection -->
+<!-- BEGIN: SpeechInteractionArea -->
+<footer class="w-full px-5 pb-7 flex flex-col items-center relative z-20 space-y-3">
+<!-- Transcribed Text Box with Audio Wave Indicator -->
+<div class="w-full bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] border border-neutral-200/80 flex flex-col items-center text-center">
+<p class="text-[13px] leading-relaxed text-neutral-700 font-medium tracking-normal select-none">
+              «Hola, actualmente estudio Ingeniería en la UNAL y me gustaría practicar mi pronunciación para el examen de clasificación...»
+            </p>
+<!-- Subtle audio waves indicator below transcript -->
+<div aria-hidden="true" class="flex items-center justify-center space-x-1 mt-3">
+<span class="w-0.5 h-2 bg-[#94b43b] rounded-full opacity-60"></span>
+<span class="w-0.5 h-3.5 bg-[#94b43b] rounded-full opacity-80"></span>
+<span class="w-0.5 h-5 bg-[#94b43b] rounded-full"></span>
+<span class="w-0.5 h-2.5 bg-[#94b43b] rounded-full opacity-70"></span>
+<span class="w-0.5 h-4 bg-[#94b43b] rounded-full"></span>
+<span class="w-0.5 h-6 bg-[#94b43b] rounded-full"></span>
+<span class="w-0.5 h-3 bg-[#94b43b] rounded-full opacity-75"></span>
+<span class="w-0.5 h-5 bg-[#94b43b] rounded-full"></span>
+<span class="w-0.5 h-2 bg-[#94b43b] rounded-full opacity-60"></span>
+</div>
+</div>
+<!-- Circular Microphone Action Button -->
+<div class="flex justify-center items-center pt-1">
+<button aria-label="Grabar voz" class="w-16 h-16 rounded-full bg-[#94b43b] hover:bg-[#85a334] text-white flex items-center justify-center shadow-lg transition-transform active:scale-95 focus:outline-none mic-pulse" type="button">
+<!-- Microphone Icon -->
+<svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+<path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"></path>
+<path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"></path>
+</svg>
+</button>
+</div>
+<!-- Phone Home Indicator Bar -->
+<div class="w-32 h-1 bg-neutral-300 rounded-full mt-2"></div>
+</footer>
+<!-- END: SpeechInteractionArea -->
+</div>
+</div>
+<!-- END: SmartphoneFrame -->
+</main>
+<!-- END: DesktopCanvas -->
+
+
+</body></html>
